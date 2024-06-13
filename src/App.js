@@ -35,8 +35,8 @@ function App() {
     <h1>Dictionary App</h1>
     <input type="text" placeholder="Search for a word..." onChange={handleChange} value={search}/>
     <button onClick={handleClick}>Search</button>
-    <div><b>Definition:</b></div>
-    <p>{display}</p>
+    <div>Definition: {display}</div>
+    
     </>
   );
 }

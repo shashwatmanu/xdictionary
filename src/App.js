@@ -14,7 +14,7 @@ function App() {
   }
 
   const findInDictionary = () =>{
-    let data = [
+    let dictionary = [
 
       { word: "React", meaning: "A JavaScript library for building user interfaces." },
     
@@ -23,8 +23,8 @@ function App() {
       { word: "State", meaning: "An object that stores data for a component." }
     
     ];
-    
-    let ans = data.find((ele)=> ele.word.toLowerCase()===searchWord.toLowerCase());
+
+    let ans = dictionary.find((ele)=> ele.word.toLowerCase()===searchWord.toLowerCase());
     if(ans){
      setWordMeaning(ans.meaning)
     }

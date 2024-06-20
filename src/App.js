@@ -15,13 +15,9 @@ function App() {
 
   const findInDictionary = () =>{
     let dictionary = [
-
       { word: "React", meaning: "A JavaScript library for building user interfaces." },
-    
       { word: "Component", meaning: "A reusable building block in React." },
-    
       { word: "State", meaning: "An object that stores data for a component." }
-    
     ];
 
     let ans = dictionary.find((ele)=> ele.word.toLowerCase()===searchWord.toLowerCase());
@@ -29,7 +25,7 @@ function App() {
      setWordMeaning(ans.meaning)
     }
     else{
-      setWordMeaning('Word not found in the dictionary');
+      setWordMeaning('Word not found in the dictionary.');
     }
   }
 
